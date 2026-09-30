@@ -12,7 +12,7 @@
 - `site-data.js`：姓名、机构、简介、社交链接、论文资料。
 - `scripts/build.mjs`：页面模板、占位内容、原创 SVG 插画。
 - `styles.css`：配色、版式、响应式和动画。
-- `app.js`：移动导航、论文筛选、动画暂停、CV 打印。
+- `app.js`：移动导航、论文筛选和动画暂停。
 - `avatar.jpg`：用户提供的头像，保留原文件。
 
 修改数据或模板后运行 `npm.cmd run build`；运行 `npm.cmd run check` 检查页面和本地资源链接。
@@ -26,8 +26,8 @@
 LinkedIn 链接由用户提供；公开页面无法读取，因此未从中推测职位和教育经历。
 来源：https://www.linkedin.com/in/zejun-wu-594844271/
 
-待补充：姓名正式写法、职位/学位阶段、部门及导师、详细简介、联系邮箱、CV、媒体报道、研究产品、博客。
-所有未确认的经历及尚未提供的内容都明确标注为占位。CV 的打印结果是草稿，不是正式简历。
+待补充：姓名正式写法、职位/学位阶段、部门及导师、详细简介、联系邮箱、媒体报道和博客。
+所有未确认的经历及尚未提供的内容都明确标注为占位。
 森林开屏与其他占位图为本项目原创 SVG，使用 CSS 缓慢移动；不是参考网站的视频素材。
 外部字体不可用时自动使用系统字体。减少动态效果的系统设置会停用动画。
 
@@ -55,6 +55,6 @@ git push -u origin main
 
 ## September 2026 content update
 
-HOME now includes three personal news cards adapted from the PERS Lab news feed. MEDIA includes the same verified fieldwork and award updates. Research and CV now describe canopy structure, airborne LiDAR, TLS, and tropical forest fieldwork. Third-year Ph.D. candidate status was confirmed directly by the user. The lab announcement does not identify Zejun's award by name; it is not labeled as a Jefferson Fellowship.
+HOME now includes three personal news cards adapted from the PERS Lab news feed. MEDIA includes the same verified fieldwork and award updates. Research describes canopy structure, airborne LiDAR, TLS, and tropical forest fieldwork. Third-year Ph.D. candidate status was confirmed directly by the user. The lab announcement does not identify Zejun's award by name; it is not labeled as a Jefferson Fellowship.
 
 Sources: https://geoxiyang.github.io/PERS-Website/Lab%20Website.html#people and https://geoxiyang.github.io/PERS-Website/news.json (accessed 2026-09-30). Photos in assets/news-neon.jpg and assets/news-tls.webp originate from the corresponding PERS Lab news entries. The Puerto Rico card plays the lab-hosted video on demand. The TLS photograph shows Bartlett fieldwork, not an award ceremony.

@@ -20,7 +20,6 @@ filters.forEach(button => button.addEventListener('click', () => {
   });
   document.querySelector('#result-count').textContent = `${count} ${count===1?'publication':'publications'}`;
 }));
-document.querySelector('[data-print]')?.addEventListener('click',()=>window.print());
 const motion = document.querySelector('[data-motion]');
 motion?.addEventListener('click',()=>{
   const paused = document.body.classList.toggle('motion-paused');
