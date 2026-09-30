@@ -52,3 +52,9 @@ git push -u origin main
 发布地址：https://zejunwu99.github.io/ 。
 
 如果远程仓库已经有内容，先获取并检查已有内容，不要强制推送。
+
+## September 2026 content update
+
+HOME now includes three personal news cards adapted from the PERS Lab news feed. MEDIA includes the same verified fieldwork and award updates. Research and CV now describe canopy structure, airborne LiDAR, TLS, and tropical forest fieldwork. Third-year Ph.D. candidate status was confirmed directly by the user. The lab announcement does not identify Zejun's award by name; it is not labeled as a Jefferson Fellowship.
+
+Sources: https://geoxiyang.github.io/PERS-Website/Lab%20Website.html#people and https://geoxiyang.github.io/PERS-Website/news.json (accessed 2026-09-30). Photos in assets/news-neon.jpg and assets/news-tls.webp originate from the corresponding PERS Lab news entries. The Puerto Rico card plays the lab-hosted video on demand. The TLS photograph shows Bartlett fieldwork, not an award ceremony.
