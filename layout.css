@@ -112,7 +112,7 @@ body:not(.landing) {
   grid-template-columns: minmax(0, 1.65fr) minmax(260px, 0.7fr);
   gap: 72px;
   align-items: start;
-  padding: 68px 0 78px;
+  padding: 68px 0 42px;
 }
 
 .intro.about .intro-copy > p {
@@ -161,7 +161,7 @@ body:not(.landing) {
 }
 
 .home-news {
-  padding: 58px 0 66px;
+  padding: 34px 0 66px;
 }
 
 .home-news .news-heading {
@@ -303,7 +303,7 @@ body:not(.landing) {
   .intro.about {
     grid-template-columns: 1fr;
     gap: 16px;
-    padding: 42px 0 52px;
+    padding: 42px 0 30px;
   }
 
   .intro.about h1 {
@@ -318,6 +318,10 @@ body:not(.landing) {
 
   .home-news .news-heading h2 {
     font-size: 40px;
+  }
+
+  .home-news {
+    padding-top: 28px;
   }
 
   .intro.about .portrait {
