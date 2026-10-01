@@ -83,7 +83,8 @@ body:not(.landing) {
 
 .about-text p {
   margin-bottom: 19px;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 600;
   line-height: 1.8;
 }
 
@@ -101,6 +102,91 @@ body:not(.landing) {
 .intro.about .portrait img {
   height: auto;
   aspect-ratio: 3649 / 4562;
+}
+
+.home-news {
+  padding: 58px 0 66px;
+}
+
+.home-news .news-heading {
+  margin-bottom: 26px;
+}
+
+.home-news .news-heading h2 {
+  margin-bottom: 0;
+}
+
+.news-scroll {
+  height: 340px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 4px 28px;
+  background: #fff;
+  border: 1px solid #e1e5de;
+  box-shadow: 0 12px 34px rgba(36, 60, 51, 0.12);
+  scrollbar-color: #829188 #edf0eb;
+  scrollbar-width: thin;
+}
+
+.news-scroll:focus-visible {
+  outline: 3px solid #aa7942;
+  outline-offset: 5px;
+}
+
+.news-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+.news-scroll::-webkit-scrollbar-track {
+  background: #edf0eb;
+}
+
+.news-scroll::-webkit-scrollbar-thumb {
+  background: #829188;
+  border: 2px solid #edf0eb;
+  border-radius: 10px;
+}
+
+.news-row {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  gap: 24px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.news-row:last-child {
+  border-bottom: 0;
+}
+
+.news-row > time {
+  color: #879189;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.news-category {
+  color: var(--green);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.news-row h3 {
+  margin: 4px 0 8px;
+  font-family: var(--sans);
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.news-row p {
+  margin-bottom: 8px;
+  color: var(--muted);
+}
+
+.home-news .news-more {
+  margin-top: 22px;
 }
 
 @media (max-width: 850px) {
@@ -146,12 +232,27 @@ body:not(.landing) {
   }
 
   .about-text p {
-    font-size: 15px;
+    font-size: 13px;
     line-height: 1.78;
   }
 
   .intro.about .portrait {
     width: min(82%, 320px);
     margin: 18px auto 0;
+  }
+
+  .news-scroll {
+    height: 360px;
+    padding: 0 18px;
+  }
+
+  .news-row {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding: 23px 0;
+  }
+
+  .news-row h3 {
+    font-size: 17px;
   }
 }
