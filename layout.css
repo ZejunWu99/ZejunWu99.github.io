@@ -38,30 +38,37 @@ body:not(.landing) {
 .header-socials {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
 }
 
 .header-socials a {
-  display: grid;
-  place-items: center;
-  width: 29px;
-  height: 29px;
-  border: 1px solid #c8d0c5;
-  border-radius: 50%;
-  color: var(--green);
-  transition: color 0.2s, background 0.2s, border-color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  height: 28px;
+  color: var(--ink);
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1;
+  transition: color 0.2s, transform 0.2s;
 }
 
 .header-socials a:hover {
-  color: #fff;
-  background: var(--green);
-  border-color: var(--green);
+  color: var(--green);
+  transform: translateY(-1px);
 }
 
-.header-socials svg {
-  width: 15px;
-  height: 15px;
-  fill: currentColor;
+.header-socials .scholar-icon {
+  color: #4285f4;
+  font-size: 24px;
+}
+
+.header-socials .linkedin-icon {
+  color: #0a66c2;
+  font-size: 21px;
+  letter-spacing: -1px;
 }
 
 .header .wordmark .brand-mark {
@@ -81,6 +88,7 @@ body:not(.landing) {
 
 .header .wordmark .brand-name {
   color: var(--ink);
+  white-space: nowrap;
 }
 
 .nav {
@@ -275,12 +283,14 @@ body:not(.landing) {
   }
 
   .header-socials {
-    gap: 5px;
+    gap: 9px;
   }
 
   .header-socials a {
-    width: 27px;
-    height: 27px;
+    min-width: 20px;
+    width: auto;
+    height: 26px;
+    font-size: 20px;
   }
 
   .intro.about {
