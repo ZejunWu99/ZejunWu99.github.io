@@ -70,7 +70,8 @@ body:not(.landing) {
 
 .intro.about h1 {
   margin-bottom: 30px;
-  font-size: clamp(52px, 6vw, 76px);
+  font-size: 44px;
+  font-weight: 700;
 }
 
 .intro.about h1 span {
@@ -83,8 +84,8 @@ body:not(.landing) {
 
 .about-text p {
   margin-bottom: 19px;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1.8;
 }
 
@@ -114,6 +115,8 @@ body:not(.landing) {
 
 .home-news .news-heading h2 {
   margin-bottom: 0;
+  font-size: 44px;
+  font-weight: 700;
 }
 
 .news-scroll {
@@ -185,10 +188,6 @@ body:not(.landing) {
   color: var(--muted);
 }
 
-.home-news .news-more {
-  margin-top: 22px;
-}
-
 @media (max-width: 850px) {
   .intro.about {
     grid-template-columns: minmax(0, 1.35fr) minmax(220px, 0.65fr);
@@ -228,12 +227,17 @@ body:not(.landing) {
   }
 
   .intro.about h1 {
-    font-size: 54px;
+    font-size: 40px;
   }
 
   .about-text p {
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: 400;
     line-height: 1.78;
+  }
+
+  .home-news .news-heading h2 {
+    font-size: 40px;
   }
 
   .intro.about .portrait {

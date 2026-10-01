@@ -15,4 +15,4 @@ for(const name of pages){
 const {publications}=await import('../site-data.js');
 assert.equal(publications.filter(p=>p.type==='Journal article').length,2);
 assert.equal(publications.filter(p=>p.type==='Conference abstract').length,1);
-console.log(`PASS: 5 pages, ${checked} local references, four-page navigation, and publication categories.`);
+console.log(`PASS: 5 pages, ${checked} local references, four site pages plus CV navigation, and publication categories.`);
