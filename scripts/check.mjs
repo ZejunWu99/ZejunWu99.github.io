@@ -6,7 +6,7 @@ for(const name of pages){
  const html=await fs.readFile(`${name}.html`,'utf8');
  assert.match(html,/<html lang="en">/);assert.match(html,/<h1[ >]/);
  for(const [,url] of html.matchAll(/(?:src|href)="([^"#]+)"/g)){
-  if(/^(https?:|data:)/.test(url))continue;
+  if(/^(https?:|mailto:|tel:|data:)/.test(url))continue;
   await fs.access(url);checked++;
  }
  if(name!=='index')for(const route of pages.slice(1))assert.ok(html.includes(`href="${route}.html"`),`${name}: missing ${route}`);

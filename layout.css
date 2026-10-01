@@ -1,0 +1,157 @@
+body:not(.landing) {
+  padding-top: 76px;
+}
+
+.header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 100;
+  background: rgba(245, 244, 237, 0.96);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 18px rgba(36, 60, 51, 0.07);
+}
+
+.header-inner {
+  height: 76px;
+}
+
+.header .wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 13px;
+  font-family: var(--sans);
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.25px;
+}
+
+.header .wordmark .brand-mark {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  border-radius: 12px;
+  background: #23694d;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  box-shadow: 0 7px 16px rgba(35, 105, 77, 0.2);
+}
+
+.header .wordmark .brand-name {
+  color: var(--ink);
+}
+
+.nav {
+  gap: 26px;
+}
+
+.nav a,
+.menu-toggle {
+  font-weight: 800;
+}
+
+.intro.about {
+  grid-template-columns: minmax(0, 1.65fr) minmax(260px, 0.7fr);
+  gap: 72px;
+  align-items: start;
+  padding: 68px 0 78px;
+}
+
+.intro.about .intro-copy > p {
+  max-width: none;
+}
+
+.intro.about .eyebrow {
+  margin-bottom: 23px;
+}
+
+.intro.about h1 {
+  margin-bottom: 30px;
+  font-size: clamp(52px, 6vw, 76px);
+}
+
+.intro.about h1 span {
+  color: #829775;
+}
+
+.about-text {
+  max-width: 760px;
+}
+
+.about-text p {
+  margin-bottom: 19px;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.about-text a {
+  color: var(--green);
+  font-weight: 700;
+  border-bottom: 1px solid #859780;
+}
+
+.intro.about .portrait {
+  max-width: 340px;
+  margin: 64px 0 0 auto;
+}
+
+.intro.about .portrait img {
+  height: auto;
+  aspect-ratio: 3649 / 4562;
+}
+
+@media (max-width: 850px) {
+  .intro.about {
+    grid-template-columns: minmax(0, 1.35fr) minmax(220px, 0.65fr);
+    gap: 38px;
+  }
+
+  .intro.about .portrait {
+    margin-top: 72px;
+  }
+}
+
+@media (max-width: 620px) {
+  body:not(.landing) {
+    padding-top: 79px;
+  }
+
+  .header-inner {
+    min-height: 79px;
+    height: auto;
+  }
+
+  .header .wordmark {
+    font-size: 17px;
+  }
+
+  .header .wordmark .brand-mark {
+    width: 39px;
+    height: 39px;
+    flex-basis: 39px;
+    border-radius: 11px;
+  }
+
+  .intro.about {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 42px 0 52px;
+  }
+
+  .intro.about h1 {
+    font-size: 54px;
+  }
+
+  .about-text p {
+    font-size: 14px;
+    line-height: 1.78;
+  }
+
+  .intro.about .portrait {
+    width: min(82%, 320px);
+    margin: 18px auto 0;
+  }
+}
