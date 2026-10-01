@@ -83,8 +83,8 @@ body:not(.landing) {
 
 .about-text p {
   margin-bottom: 19px;
-  font-size: 14px;
-  line-height: 1.85;
+  font-size: 16px;
+  line-height: 1.8;
 }
 
 .about-text a {
@@ -146,7 +146,7 @@ body:not(.landing) {
   }
 
   .about-text p {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.78;
   }
 
